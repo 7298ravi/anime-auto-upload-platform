@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Shadow Realm",
+    "japaneseTitle": "影の領域",
+    "genres": ["Action", "Fantasy"],
+    "status": "Ongoing",
+    "year": 2025,
+    "episodes": 12,
+    "rating": 4.9,
+    "description": "A rogue swordsman uncovers a forbidden realm hidden beneath the city and must protect the last magical gate.",
+    "poster": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=900&q=80",
+    "trailer": "",
+    "createdAt": "2025-01-10T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Moon Spirit",
+    "japaneseTitle": "月の精霊",
+    "genres": ["Fantasy", "Romance"],
+    "status": "Completed",
+    "year": 2024,
+    "episodes": 24,
+    "rating": 4.8,
+    "description": "A lonely shrine keeper discovers a celestial spirit bound to the moon and must help it regain its lost power.",
+    "poster": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80",
+    "trailer": "",
+    "createdAt": "2024-12-02T12:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Starlight Echo",
+    "japaneseTitle": "星の反響",
+    "genres": ["Romance", "Drama"],
+    "status": "Ongoing",
+    "year": 2026,
+    "episodes": 10,
+    "rating": 4.7,
+    "description": "Two students from opposite worlds awaken a resonance that links their memories across time.",
+    "poster": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80",
+    "trailer": "",
+    "createdAt": "2025-05-24T12:00:00.000Z"
+  }
+]

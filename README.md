@@ -1,25 +1,24 @@
 # Anime Auto Upload Platform
 
-A modern anime streaming website with an admin panel to upload anime posters, episodes, and metadata automatically to a local backend.
+A modern anime streaming platform starter built with a Node.js + Express backend and a Vite + React frontend.
 
 ## Features
 
-- Dark neon anime landing page
-- Anime catalog with search and genre filters
-- Admin upload form for anime metadata and files
-- Auto-save to a local JSON database
-- Poster and trailer file uploads
-- Responsive layout for desktop and mobile
-- Ready for extension with real user auth and database integration
+- Modern dark anime landing page
+- Search and genre filtering
+- Anime catalog cards with poster and metadata
+- Admin upload form for anime entries
+- File upload support for posters and trailers
+- Data stored in a local JSON database
+- Easy local development with one command
 
 ## Tech Stack
 
-- Frontend: React + Vite
-- Backend: Node.js + Express
-- Storage: Local filesystem + JSON metadata
-- Uploads: Multer
+- Frontend: React, Vite
+- Backend: Node.js, Express, Multer
+- Data storage: local JSON file
 
-## Project Structure
+## Project structure
 
 ```text
 anime-auto-upload-platform/
@@ -27,61 +26,51 @@ anime-auto-upload-platform/
 │   ├── data/
 │   │   └── anime.json
 │   ├── uploads/
+│   │   └── .gitkeep
 │   ├── package.json
 │   └── server.js
 ├── frontend/
-│   ├── src/
 │   ├── index.html
 │   ├── package.json
 │   ├── vite.config.js
-│   └── .gitignore
+│   └── src/
+│       ├── App.jsx
+│       ├── main.jsx
+│       └── styles.css
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── .github/
 ```
 
-## Quick Start
-
-1. Install project dependencies:
+## Quick start
 
 ```bash
+npm install
 npm run install:all
-```
-
-2. Start the app:
-
-```bash
 npm run dev
 ```
 
-This will run the backend on `http://localhost:5000` and the frontend on `http://localhost:5173`.
+Then:
 
-## Admin Upload Flow
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
 
-- Open the frontend site.
-- Fill in the anime title, genres, status, year, episodes, and description.
-- Upload a poster image and optional trailer video.
-- Click `Add Anime`.
-- Data is stored in `backend/data/anime.json` and files are stored in `backend/uploads/`.
+## Admin usage
 
-## API Endpoints
+1. Open the site in the browser.
+2. Use the "Admin Upload" form.
+3. Fill in the anime title, genres, year, status, episodes, and description.
+4. Upload a poster and optional trailer.
+5. Click "Add Anime".
+
+The data is saved into `backend/data/anime.json` and files are saved in `backend/uploads/`.
+
+## API endpoints
 
 ```text
+GET /api/health
 GET /api/anime
 POST /api/anime
-GET /api/health
 POST /api/upload
 ```
-
-## Notes
-
-This project is designed to be a strong starter for a real anime streaming platform. You can extend it later with:
-
-- PostgreSQL integration
-- JWT auth
-- Admin login
-- Episode-by-episode pages
-- Watchlist and favorites
-- Real video streaming server
-- Cloud storage upload support
